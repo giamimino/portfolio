@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/* Import fonts from fonts.css file */
+@import url("./fonts.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #00ffee;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bg-color);
+    user-select: none;
+    background-image: url('../assets/images/bg/BG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e6e6e6;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8888889f;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5555559f;
+}
+
+/* Header Code start from here */
+
+header {
+    width: 100%;
+    font-family: "Work Sans", sans-serif;
+    padding: 20px 200px;
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+}
+
+.wrapper-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #00000014;
+}
+
+.logo-wrapper {
+    padding-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-user {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 56px;
+    width: 56px;
+    height: 56px;
+    padding: 20px;
+    border-radius: 1000px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #A53DFF;
+}
+
+.logo-wrapper h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.navbar {
+    width: 722px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar div[class^="link-"] {
+    cursor: pointer;
+    color: #333333;
+    font-weight: 500;
+}
+
+.navbar div[class^="link-"]:hover {
+    text-decoration: underline;
+}
+
+.link-contact {
+    padding: 24px 12px;
+    width: 111px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #333333;
+    font-weight: 500;
+    background-color: #A53DFF;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #A53DFF;
+    transition: all .4s ease;
+}
+
+.link-contact:hover {
+    border: 2px solid #A53DFF;
+    background-color: transparent;
+    color: #000;
+}
+
+/* Header code end here */
+
+/* Main code start from here */
+
+main {
+    padding: 200px;
+    margin-top: 107px;
+}
+
+.intro-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome_content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.welcome-wrapper h1 {
+    font-family: "Work Sans", sans-serif;
+    white-space: pre-line;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.welcome-wrapper p {
+    font-family: "Work Sans", sans-serif;
+    width: 435px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #556070e4;
+    position: relative;
+}
+
+.welcome-wrapper p span {
+    position: relative;
+}
+
+
+.welcome-wrapper p span::before {
+    content: "";
+    width: calc(100% - 2%);
+    height: 25%;
+    bottom: 25%;
+    left: 0;
+    position: absolute;
+    background: #FFC8C8;
+    z-index: -1;
+}
+
+.welcome-wrapper button {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    width: 126px;
+    height: 48px;
+    padding: 24px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #A53DFF;
+    border: 2px solid #A53DFF;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.welcome-wrapper button:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.EPCHC-wrapper {
+    display: flex;
+    gap: 6px;
+    background-color: #fff;
+}
+
+.EPCHC-wrapper div[class^="EPCHC_box"] {
+    width: 170px;
+    height: auto;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    background-color: #edd8ff80;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+div[class^="EPCHC_box"] h1 {
+    color: #424E60;
+    font-weight: 600;
+    font-family: "Work Sans", sans-serif;
+    font-size: 32px;
+}
+
+div[class^="EPCHC_box"] p {
+    color: #697484;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.welcome_content-wrapper-pfp img {
+    border-radius: 25px;
+    box-shadow: 0 24px 116px rgba(43, 56, 76, 0.19);
+}
+/* Main code end here */
