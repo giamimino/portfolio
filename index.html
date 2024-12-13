@@ -68,6 +68,50 @@ Gia Miminoshvili</h1>
                 <img src="./assets/images/me/IMG_0304-transformed-removebg-preview.png" alt="">
             </div>
         </div>
+        <div class="about_me-container">
+            <div class="about_me-pfp">
+                <img src="./assets/images/me/IMG_0304-transformed-removebg-preview.png" height="300px" width="225px" alt="">
+                <div class="about_me-contact_socials-wrapper">
+                    <a href="https://www.facebook.com/gia.miminoshvili.92" target="_blank" class="soc-box">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gia-miminoshvili-2a89642aa/" target="_blank" class="soc-box">
+                        <i class='bx bxl-linkedin' ></i>
+                    </a>
+                    <a href="https://www.instagram.com/giamiminoshvili/" target="_blank" class="soc-box">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                    <a href="https://x.com/GiaMiminos88932" target="_blank" class="soc-box">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="#" target="_blank" class="soc-box">
+                        <i class='bx bxl-whatsapp' ></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="about_me-wrapper">
+                <h1>I’m a Professional Frontend Developer</h1>
+                <p>
+                    Skilled in technologies like HTML, CSS, 
+                    JavaScript, React, and TypeScript, with a focus on crafting well-structured and visually 
+                    appealing web applications.
+                </p>
+                <p>
+                    As a self-taught developer, 
+                    over a year of dedication has 
+                    honed a deep understanding of 
+                    user-centric design, seamless code integration, 
+                    and delivering exceptional digital solutions. Driven by 
+                    curiosity and determination, each project is approached with 
+                    innovation and attention to detail, ensuring ideas come to life through carefully crafted code.
+                </p>
+                <div class="about_me-btns">
+                    <button>My Project</button>
+                    <button id="download_CV-btn">Download CV</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <div style="height: 100vh;"></div>
@@ -79,3 +123,11 @@ Gia Miminoshvili</h1>
      <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
+<script>
+    document.getElementById("download_CV-btn").addEventListener("click", () => {
+      const link = document.createElement("a");
+      link.href = "./assets/cv/CV.txt";
+      link.download = "cv.txt";
+      link.click();
+    });
+</script>

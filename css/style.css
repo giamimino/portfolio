@@ -153,6 +153,7 @@ main {
     margin-top: 107px;
 }
 
+/* intro wrapper goes here */
 .intro-wrapper {
     width: 100%;
     display: flex;
@@ -256,4 +257,129 @@ div[class^="EPCHC_box"] p {
     border-radius: 25px;
     box-shadow: 0 24px 116px rgba(43, 56, 76, 0.19);
 }
+
+/* intro wrapper ends here */
+
+/* about me container start from here */
+
+.about_me-pfp {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.about_me-pfp img {
+    border-radius: 10px;
+}
+
+.about_me-contact_socials-wrapper {
+    width: auto;
+    padding: 6px;
+    box-shadow: 0 0 0 rgba(28, 25, 25, 0.12);
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    border: 3px dashed #7B61FF;
+    color: #697484;
+    transition: all .5s ease-in-out;
+}
+
+.about_me-contact_socials-wrapper:hover .soc-box {
+    color: #A53DFF;
+}
+
+.about_me-contact_socials-wrapper:hover {
+    color: #A53DFF;
+    border: 3px solid transparent;
+    box-shadow: 0 12px 64px rgba(28, 25, 25, 0.12);
+}
+
+.soc-box {
+    padding: 6px;
+    color: #697484;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+}
+
+.soc-box i {
+    text-decoration: none;
+}
+
+.soc-box:hover {
+    background-color: #A53DFF;
+    color: #fff;
+}
+
+.soc-box:hover i {
+    color: #fff;
+}
+
+.about_me-container {
+    width: 100%;
+    margin-top: 10px;
+    padding: 112px;
+    background-color: #fff;
+    box-shadow: 0 36px 105px rgb(43, 56, 76, 0.15);
+    border-radius: 16px;
+    display: flex;
+    gap: 136px;
+}
+
+.about_me-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about_me-wrapper h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    color: #132238;
+    font-size: 34px;
+}
+
+.about_me-wrapper {
+    color: #556070;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.about_me-btns button {
+    padding: 8px 12px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    background-color: #A53DFF;
+    border-radius: 4px;
+    color: #fff;
+    border: 2px solid #A53DFF;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.about_me-btns button:nth-child(2) {
+    background-color: transparent;
+    color: #A53DFF;
+}
+
+.about_me-btns button:nth-child(1):hover {
+    background-color: transparent;
+    color: #A53DFF;
+}
+
+.about_me-btns button:nth-child(2):hover {
+    background-color: #A53DFF;
+    color: #fff;
+}
+/* about me container ends here */
 /* Main code end here */
