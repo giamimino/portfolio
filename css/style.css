@@ -15,7 +15,7 @@
 }
 
 :root {
-    --bg-color: #080808;
+    --bg-color: #F0F1F3;
     --second-bg-color: #131313;
     --text-color: white;
     --main-color: #00ffee;
@@ -59,6 +59,7 @@ header {
     position: fixed;
     background-color: transparent;
     top: 0;
+    z-index: 999;
 }
 
 .wrapper-navbar {
@@ -382,4 +383,93 @@ div[class^="EPCHC_box"] p {
     color: #fff;
 }
 /* about me container ends here */
+
+/* work process slide start from here */
+
+.work_process-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 124px 0;
+    gap: 70px;
+}
+
+.work_process-intro h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    color: #132238;
+}
+
+.work_process-intro p {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #697484;
+    width: 500px;
+}
+
+.work_process-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.work_process-details-wrapper .detail-box-wrapper div[class^="detail-box-"] {
+    padding: 32px;
+    background-color: #f6f4f4;
+    border-radius: 12px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.detail-box-wrapper {
+    display: flex;
+    gap: 18px;
+}
+
+.work_process-details-wrapper .detail-box-wrapper div[class^="detail-box-"] h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #132238;
+}
+
+.work_process-details-wrapper .detail-box-wrapper div[class^="detail-box-"] p {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #556070;
+}
+
+.work_process-details-wrapper .detail-box-wrapper div[class^="detail-box-"] .detail-box-logo-wrapper {
+    padding: 18px;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: rgba(237, 216, 255, 0.5);
+    margin-bottom: 8px;
+}
+
+.detail-box-logo-wrapper i {
+    color: #A53DFF;
+    font-size: 26px;
+}
+
+.work_process-details-wrapper .detail-box-wrapper div[class^="detail-box-"]:hover {
+    background-color: #fff;
+    box-shadow: 32px 32px 124px rgba(43, 56, 76, 0.2);
+}
+
+.work_process-details-wrapper .detail-box-wrapper div[class^="detail-box-"]:hover .detail-box-logo-wrapper {
+    background-color: #A53DFF;
+}
+
+.work_process-details-wrapper .detail-box-wrapper div[class^="detail-box-"]:hover .detail-box-logo-wrapper i {
+    color: #fff;
+}
+
+/* work process slide end here */
 /* Main code end here */
