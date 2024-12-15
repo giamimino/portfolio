@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "fa-solid fa-magnifying-glass",
+    "title": "1. Planning and Research",
+    "info": "Once I’ve gathered all the necessary details, I begin planning. I research the latest trends in web design and development, ensuring that the website will be modern, responsive, and optimized for performance. I also consider the most appropriate technology stack based on the project requirements."
+  },
+  {
+    "icon": "fa-solid fa-bug-slash",
+    "title": "2. Testing and Debugging",
+    "info": "Once the website is developed, I conduct rigorous testing. I test the site on different devices and browsers to ensure cross-browser compatibility. I also fix any bugs that may arise during testing and ensure the site is fully responsive."
+  },
+  {
+    "icon": "fa-regular fa-comments",
+    "title": "3. Client Review and Feedback",
+    "info": "OnI then present the site to the client, asking for feedback to ensure the site meets their expectations. I make necessary revisions and adjustments based on the client's input to deliver a website that aligns with their vision."
+  },
+  {
+    "icon": "fa-solid fa-laptop",
+    "title": "4. Launch and Support",
+    "info": "After final approval, I launch the site and provide ongoing support to ensure smooth operation. I also offer training and documentation, empowering clients to manage their websites independently."
+  }
+]

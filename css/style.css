@@ -285,7 +285,7 @@ div[class^="EPCHC_box"] p {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
-    border: 3px dashed #7B61FF;
+    border: 3px solid transparent;
     color: #697484;
     transition: all .5s ease-in-out;
 }
@@ -296,7 +296,6 @@ div[class^="EPCHC_box"] p {
 
 .about_me-contact_socials-wrapper:hover {
     color: #A53DFF;
-    border: 3px solid transparent;
     box-shadow: 0 12px 64px rgba(28, 25, 25, 0.12);
 }
 
@@ -405,7 +404,6 @@ div[class^="EPCHC_box"] p {
     font-weight: 400;
     font-size: 14px;
     color: #697484;
-    width: 500px;
 }
 
 .work_process-details-wrapper {
@@ -472,4 +470,156 @@ div[class^="EPCHC_box"] p {
 }
 
 /* work process slide end here */
+
+/* Portfolio Projects slide start from here */
+
+.portfolio_projects-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.protfolio_projects-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.protfolio_projects-title-wrapper h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    color: #132238;
+}
+
+.protfolio_projects-title-wrapper p {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    color: #87909D;
+}
+
+.portfolio_projects-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.portfolio_project-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 12px 64px rgba(28, 25, 25, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.portfolio_project-img_outer-wrapper {
+    padding: 24px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.portfolio_project-wrapper .project-img {
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.portfolio_project-wrapper .project-category {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: #87909D;
+    font-size: 12px;
+    margin: 0;
+}
+
+.portfolio_project-wrapper .project-title {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    color: #131313;
+    font-size: 18px;
+    margin: 0;
+}
+
+.portfolio_project-wrapper .project_subtext {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    color: #556070;
+    font-size: 14px;
+    margin: 0;
+}
+
+.portfolio_project-img_outer-wrapper button {
+    padding: 24px 6px;
+    width: 175px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #A53DFF;
+    border-radius: 4px;
+    color: #A53DFF;
+    font-weight: 600;
+    gap: 5px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.portfolio_project-img_outer-wrapper button span,
+.portfolio_project-img_outer-wrapper button ion-icon {
+    position: absolute;
+    transition: all .5s ease-in-out;
+}
+
+.portfolio_project-img_outer-wrapper button span {
+    left: 25%;
+    transform: translateX(-25%);
+}
+
+.portfolio_project-img_outer-wrapper button .project-icon_right {
+    font-size: 24px;
+    right: 12%;
+}
+
+.portfolio_project-img_outer-wrapper button .project-icon_left {
+    font-size: 24px;
+    left: -12%;
+}
+
+.portfolio_project-img_outer-wrapper button:hover .project-icon_right {
+    right: -12%;
+}
+
+.portfolio_project-img_outer-wrapper button:hover span {
+    left: 45%;
+}
+
+.portfolio_project-img_outer-wrapper button:hover .project-icon_left {
+    left: 11%;
+}
+
+.portfolio_project-img_outer-wrapper button:active {
+    opacity: 0.7;
+    transition: 50ms ease;
+    border: 2px solid #A53DFF;
+    outline: none;
+}
+
+.portfolio_project-img_outer-wrapper button:checked {
+    border: 2px solid #A53DFF;
+    outline: none;
+    stroke: none;
+}
+
+/* Portfolio Projects slide end here */
 /* Main code end here */
