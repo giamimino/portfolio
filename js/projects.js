@@ -3,7 +3,7 @@ fetch('./assets/json/projects.json')
     if (!response.ok) {
       throw new Error('Network response was not ok ' + response.statusText);
     }
-    return response.json(); // Parse the JSON data
+    return response.json(); 
   })
   .then(projects => {
     const portfolio_projectsWrapper = document.querySelector(".portfolio_projects-wrapper");

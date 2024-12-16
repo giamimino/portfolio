@@ -150,7 +150,7 @@ header {
 /* Main code start from here */
 
 main {
-    padding: 200px;
+    padding: 200px 200px 0 200px;
     margin-top: 107px;
 }
 
@@ -509,12 +509,20 @@ div[class^="EPCHC_box"] p {
 }
 
 .portfolio_project-wrapper {
-    display: flex;
+    display: grid;
     flex-direction: column;
-    background-color: #fff;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
     box-shadow: 0 12px 64px rgba(28, 25, 25, 0.1);
+    background-color: #fff;
     border-radius: 8px;
+    transition: all .3s ease;
     overflow: hidden;
+}
+
+.portfolio_project-wrapper:hover {
+    box-shadow: 0 36px 192px rgba(28, 25, 25, 0.2);
+    z-index: 2;
 }
 
 .portfolio_project-img_outer-wrapper {
@@ -571,9 +579,53 @@ div[class^="EPCHC_box"] p {
     font-weight: 600;
     gap: 5px;
     overflow: hidden;
-    transition: all .5s ease-in-out;
     cursor: pointer;
+    margin-top: auto;
+    z-index: 1;
 }
+
+.portfolio_project-img_outer-wrapper button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #A53DFF;
+    z-index: 0;
+    transition: none;
+}
+
+.portfolio_project-img_outer-wrapper button:hover::before {
+    animation: slide-left-to-right 0.7s forwards;
+}
+
+.portfolio_project-img_outer-wrapper button::before {
+    animation: slide-right-to-left 0.7s forwards;
+}
+
+.portfolio_project-img_outer-wrapper button:hover {
+    color: #fff;
+}
+
+@keyframes slide-left-to-right {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide-right-to-left {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
 
 .portfolio_project-img_outer-wrapper button span,
 .portfolio_project-img_outer-wrapper button ion-icon {
@@ -621,5 +673,81 @@ div[class^="EPCHC_box"] p {
     stroke: none;
 }
 
+.more-projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.more-projects button {
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #333333;
+    font-weight: 500;
+    background-color: #A53DFF;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #A53DFF;
+    transition: all .5s ease-in-out;
+}
+
+.more-projects button:hover {
+    border: 2px solid #A53DFF;
+    background-color: transparent;
+    color: #000;
+}
+
 /* Portfolio Projects slide end here */
+
+/* project-discussion slide start from here */
+
+.project-discussion {
+    width: 100%;
+    padding: 100px 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #132238;
+}
+
+.project-discussion h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.project-discussion p {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    color: #A5ACB5;
+}
+
+.project-discussion button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 12px;
+    width: 240px;
+    height: 48px;
+    background: #A53DFF;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #A53DFF;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.project-discussion button:hover {
+    background-color: transparent;
+}
+
+/* project-discussion slide end here */
 /* Main code end here */
