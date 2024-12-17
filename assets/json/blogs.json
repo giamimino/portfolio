@@ -1,0 +1,17 @@
+[
+  {
+    "date": "17 Mar, 2024 / 0 Comments",
+    "info": "Building responsive nav bar Tutorial",
+    "image": "./assets/images/blogs/responsive.jpg"
+  },
+  {
+    "date": "20 Mar, 2024 / 0 Comments",
+    "info": "Teching html for beginners",
+    "image": "./assets/images/blogs/htmlTut.jpg"
+  },
+  {
+    "date": "10 Mar, 2024 / 0 Comments",
+    "info": "Vs Code Tips & Tricks Tutorial for begginers",
+    "image": "./assets/images/blogs/Tipsandtricks.jpg"
+  }
+]

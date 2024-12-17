@@ -704,7 +704,7 @@ div[class^="EPCHC_box"] p {
 
 /* Portfolio Projects slide end here */
 
-/* project-discussion slide start from here */
+/* project discussion slide start from here */
 
 .project-discussion {
     width: 100%;
@@ -749,5 +749,94 @@ div[class^="EPCHC_box"] p {
     background-color: transparent;
 }
 
-/* project-discussion slide end here */
+/* project discussion slide end here */
+
+/* blog wrapper slide start from here */
+
+.blog-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog_title-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_title-wrapper h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    color: #132238;
+}
+
+.blog_title-wrapper p {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    color: #87909D;
+    text-align: center;
+}
+
+.blogs-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.blog-wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
+    box-shadow: 0 12px 64px rgba(28, 25, 25, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+
+.blog-wrapper:hover {
+    box-shadow: 0 36px 192px rgba(28, 25, 25, 0.2);
+    z-index: 2;
+}
+
+.blog-image-outer-wrapper {
+    padding: 24px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.blog-image-outer-wrapper .blog-img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.blog-image-outer-wrapper .blog-date {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: #87909D;
+    font-size: 12px;
+    margin: 0;
+}
+
+.blog-image-outer-wrapper .blog-title {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    color: #131313;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* blog wrapper slide start end here */
+
 /* Main code end here */
