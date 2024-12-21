@@ -954,4 +954,198 @@ div[class^="EPCHC_box"] p {
 }
 /* What i do? slide end here */
 
+/* hire me contact container slide start form here */
+
+.hire_me_contact-container {
+    padding: 100px 200px;
+    background-color: #B1B0AD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hire_me_contact-wrapper {
+    width: 100%;
+    background-color: #fff;
+    padding: 44px 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    border-radius: 15px;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+}
+
+.hire_me_contact-wrapper h1 {
+    color: #132238;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+}
+
+.hire_me_contact-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+}
+.hire_me_contact-wrapper form input {
+    border-bottom: 2px solid #E6E8EB;
+    padding-bottom: 10px;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+
+.hire_me_contact-wrapper form input:focus {
+    border-bottom: 2px solid #A53DFF;
+    padding-bottom: 6px;
+    color: #A53DFF;
+}
+
+.hire_me_contact-wrapper form input:focus::placeholder {
+    color: #A53DFF;
+}
+
+.hire_me_contact-wrapper form input::placeholder {
+    color: #697484;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+}
+
+.hire_me_contact-wrapper form button {
+    width: fit-content;
+}
+
+.submit-btn {
+    width: 120px !important;
+    height: 36px !important;
+    padding: 6px 12px;
+    background-color: #A53DFF;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0 20px 64px rgba(0, 0, 0, 0.5);
+    transition: .5s ease-in-out;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+.submit-btn:focus {
+    outline: none;
+    border: none;
+}
+
+.submit-btn span {
+    text-transform: uppercase;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 42%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.submit-btn i {
+    font-size: 18px;
+    position: absolute;
+    color: #fff;
+    right: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* ანიმაცია */
+@keyframes plane {
+    0% {
+        right: 5%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    25% {
+        transform: translate(10px, -40px) rotate(-90deg);
+    }
+    30% {
+        transform: translate(-100px, -40px) rotate(90deg);
+    }
+    65% {
+        transform: translate(-50px, 25px);
+    }
+    100% {
+        right: 5%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.submit-btn.animate i {
+    animation-name: plane;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+/* Custom Alert Styles */
+.custom-alert {
+    position: fixed;
+    top: 10%;
+    left: 11.5%;
+    transform: translate(-50%, -50%) scale(0); /* Start scaled down */
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.custom-alert::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    left: 0;
+}
+
+.custom-alert.hidden {
+    transform: translate(-50%, -50%) scale(0); /* Scale down */
+}
+
+.custom-alert.show {
+    transform: translate(-50%, -50%) scale(1); /* Scale up */
+}
+
+.custom-alert-content {
+    text-align: center;
+}
+
+.custom-alert button#closeAlertBtn {
+    background-color: #f5c6cb;
+    border: none;
+    color: #721c24;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.custom-alert button#closeAlertBtn:hover {
+    background-color: #f1b0b7;
+}
+
+/* hire me contact container slide end here */
+
 /* Main code end here */

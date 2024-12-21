@@ -20,6 +20,15 @@
      <script src="./js/blogs.js" defer></script>
     <!-- Services json forEach ()=> file-->
      <script src="./js/services.js" defer></script>
+    <!--EmailJs install-->
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+     <script>
+         document.addEventListener('DOMContentLoaded', function() {
+             emailjs.init("OlbNcahZYrhV1qcmY"); // Initialize EmailJS with your public key
+         });
+     </script>
+    <!-- Submit js file-->
+     <script src="./js/submit.js" defer></script>
 </head>
 <body> <!-- content here --> 
 
@@ -234,6 +243,40 @@ Gia Miminoshvili</h1>
         <div class="what_i_do-services-wrapper">
         </div>
     </div>
+    <div class="hire_me_contact-container">
+        <div class="hire_me_contact-wrapper">
+            <h1>Hire Me</h1>
+            <form id="contact-form">
+                <input type="text" name="name" id="input-name" placeholder="Name*" autocomplete="off" required>
+                
+                <input type="email" name="email" id="input-email" placeholder="Email*" autocomplete="off" required>
+
+                <input type="text" name="location" id="input-location" placeholder="Location" autocomplete="off" required>
+
+                <input type="text" name="phone" id="input-phone" placeholder="Phone" autocomplete="off" required>
+
+                <div>
+                    <input type="number" name="budget" id="input-budget" placeholder="Budget*" autocomplete="off" required>
+
+                    <input type="text" name="subject" id="input-subject" placeholder="Subject" autocomplete="off" required>
+                </div>
+
+                <input type="text" name="message" id="input-message" placeholder="Messgae" autocomplete="off" required>
+
+                <button type="submit" class="submit-btn" id="submit-btn" onclick="triggerAnimation()">
+                    <span>Submit</span>
+                    <i class='bx bxs-paper-plane'></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="customAlert" class="custom-alert hidden">
+        <div class="custom-alert-content">
+            <p id="alertMessage">Message goes here...</p>
+            <button id="closeAlertBtn">Close</button>
+        </div>
+    </div>
     <!-- Jquery JavaScript file -->
      <script src="./js/jquery.3.4.1.js"></script>
 
@@ -253,5 +296,15 @@ Gia Miminoshvili</h1>
       link.download = "cv.txt";
       link.click();
     });
+
+    function triggerAnimation() {
+        const button = document.querySelector('.submit-btn');
+        button.classList.add('animate');
+        
+        // Optionally, remove the class after animation ends
+        setTimeout(() => {
+            button.classList.remove('animate');
+        }, 3100); // duration of animation
+    }
 
 </script>
