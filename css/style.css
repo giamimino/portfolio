@@ -1030,7 +1030,7 @@ div[class^="EPCHC_box"] p {
     cursor: pointer;
     outline: none;
     border: none;
-    box-shadow: 0 20px 64px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 64px rgba(0, 0, 0, 0.2);
     transition: .5s ease-in-out;
 }
 
@@ -1100,17 +1100,17 @@ div[class^="EPCHC_box"] p {
 /* Custom Alert Styles */
 .custom-alert {
     position: fixed;
-    top: 10%;
-    left: 11.5%;
-    transform: translate(-50%, -50%) scale(0); /* Start scaled down */
-    background-color: #f8d7da;
+    top: 1.5%;
+    left: -50%;
+    background-color: #fff;
     color: #721c24;
-    border: 1px solid #f5c6cb;
+    border: none;
     border-radius: 5px;
-    padding: 20px;
+    padding: 12px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    transition: transform 0.3s ease; /* Smooth scaling transition */
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
 }
 
 .custom-alert::before {
@@ -1118,34 +1118,159 @@ div[class^="EPCHC_box"] p {
     width: 5px;
     height: 100%;
     left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #32CD32;
+    z-index: -1;
 }
 
 .custom-alert.hidden {
-    transform: translate(-50%, -50%) scale(0); /* Scale down */
+    top: 1.5%;
+    left: -100.5%;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0);
 }
 
 .custom-alert.show {
-    transform: translate(-50%, -50%) scale(1); /* Scale up */
+    left: 1%;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
 }
 
 .custom-alert-content {
-    text-align: center;
+    text-align: left;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: #132238;
+}
+
+.custom-alert-content p {
+    margin-bottom: 4px;
 }
 
 .custom-alert button#closeAlertBtn {
-    background-color: #f5c6cb;
+    background-color: transparent;
     border: none;
     color: #721c24;
-    padding: 5px 10px;
     cursor: pointer;
-    margin-top: 10px;
     border-radius: 5px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    color: #132238;
 }
 
 .custom-alert button#closeAlertBtn:hover {
-    background-color: #f1b0b7;
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+.custom-alert button#closeAlertBtn:focus {
+    border: none;
+    outline: none;
 }
 
 /* hire me contact container slide end here */
+
+/* Footer wrapper slide start from here */
+
+.footer-container {
+    position: absolute;
+    bottom: -100px;
+    background-color: #2B384C;
+    width: 100%;
+    padding: 150px 200px 50px 200px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 5px #00000014;
+}
+
+.footer_logo-wrapper {
+    padding-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer_logo-user {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 56px;
+    width: 56px;
+    height: 56px;
+    padding: 20px;
+    border-radius: 1000px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #A53DFF;
+}
+
+.footer_logo-wrapper h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+}
+
+.footer_navbar {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_navbar div[class^="footer_link-"] {
+    cursor: pointer;
+    font-family: "Work Sans";
+    color: #E6E8EB;
+    font-weight: 300;
+}
+
+.footer_navbar div[class^="footer_link-"]:hover {
+    text-decoration: underline;
+}
+
+.foooter_copyright {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    color: #F0F1F3;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 14px;
+    width: fit-content;
+}
+
+.footer_link-contact {
+    padding: 24px 12px;
+    width: 111px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #333333;
+    font-weight: 500;
+    background-color: #A53DFF;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #A53DFF;
+    transition: all .4s ease;
+}
+
+.footer_link-contact:hover {
+    border: 2px solid #A53DFF;
+    background-color: transparent;
+    color: #000;
+}
+
+/* Footer wrapper slide end here */
 
 /* Main code end here */

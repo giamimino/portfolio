@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title> <!--title-->
+    <title>GiaMimino</title> <!--title-->
     <!-- style -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- icons (boxicons) -->
@@ -39,13 +39,13 @@
                 <h2>Gia</h2>
             </div>
             <div class="navbar">
-                <div class="link-home">Home</div>
-                <div class="link-about">About</div>
-                <div class="link-process">Process</div>
-                <div class="link-portfolio">Portfolio</div>
-                <div class="link-blog">Blog</div>
-                <div class="link-services">Services</div>
-                <button type="button" class="link-contact" id="contact_btn-navbar">Contact</button>
+                <div class="link-home" onclick="scrollToY(0)">Home</div>
+                <div class="link-about" onclick="scrollToY(800)">About</div>
+                <div class="link-process" onclick="scrollToY(1400)">Process</div>
+                <div class="link-portfolio" onclick="scrollToY(2300)">Portfolio</div>
+                <div class="link-blog" onclick="scrollToY(4200)">Blog</div>
+                <div class="link-services" onclick="scrollToY(5000)">Services</div>
+                <button type="button" class="link-contact" id="contact_btn-navbar" onclick="scrollToY(5868)">Contact</button>
             </div>
         </div>
     </header>
@@ -269,12 +269,30 @@ Gia Miminoshvili</h1>
                 </button>
             </form>
         </div>
+
+        <div class="footer-container">
+            <div class="footer_logo-wrapper">
+                <div class="footer_logo-user">G</div>
+                <h2>Gia</h2>
+            </div>
+            <div class="footer_navbar">
+                <div class="footer_link-home" onclick="scrollToY(0)">Home</div>
+                <div class="footer_link-about" onclick="scrollToY(800)">About</div>
+                <div class="footer_link-process" onclick="scrollToY(1400)">Process</div>
+                <div class="footer_link-portfolio" onclick="scrollToY(2300)">Portfolio</div>
+                <div class="footer_link-blog" onclick="scrollToY(4200)">Blog</div>
+                <div class="footer_link-services" onclick="scrollToY(5000)">Services</div>
+            </div>
+            <p class="foooter_copyright">Copyright © 2024 Brooklyn</p>
+        </div>
     </div>
+
+    <div style="height: 100px;"></div>
 
     <div id="customAlert" class="custom-alert hidden">
         <div class="custom-alert-content">
             <p id="alertMessage">Message goes here...</p>
-            <button id="closeAlertBtn">Close</button>
+            <button id="closeAlertBtn">Ok</button>
         </div>
     </div>
     <!-- Jquery JavaScript file -->
