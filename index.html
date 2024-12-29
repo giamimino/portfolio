@@ -29,6 +29,8 @@
      </script>
     <!-- Submit js file-->
      <script src="./js/submit.js" defer></script>
+
+    
 </head>
 <body> <!-- content here --> 
 
@@ -43,9 +45,9 @@
                 <div class="link-about" onclick="scrollToY(800)">About</div>
                 <div class="link-process" onclick="scrollToY(1400)">Process</div>
                 <div class="link-portfolio" onclick="scrollToY(2300)">Portfolio</div>
-                <div class="link-blog" onclick="scrollToY(4200)">Blog</div>
-                <div class="link-services" onclick="scrollToY(5000)">Services</div>
-                <button type="button" class="link-contact" id="contact_btn-navbar" onclick="scrollToY(5868)">Contact</button>
+                <div class="link-blog" onclick="scrollToY(3700)">Blog</div>
+                <div class="link-services" onclick="scrollToY(4500)">Services</div>
+                <button type="button" class="link-contact" id="contact_btn-navbar" onclick="scrollToY(5268)">Contact</button>
             </div>
         </div>
     </header>
@@ -122,7 +124,7 @@ Gia Miminoshvili</h1>
                     innovation and attention to detail, ensuring ideas come to life through carefully crafted code.
                 </p>
                 <div class="about_me-btns">
-                    <button>My Project</button>
+                    <button onclick="goGithub()">My Project</button>
                     <button id="download_CV-btn">Download CV</button>
                 </div>
             </div>
@@ -197,7 +199,7 @@ Gia Miminoshvili</h1>
             <div class="portfolio_projects-wrapper">
             </div>
             <div class="more-projects">
-                <button>More Project</button>
+                <button onclick="goGithub()">More Project</button>
             </div>
         </div>
     </main>
@@ -280,8 +282,8 @@ Gia Miminoshvili</h1>
                 <div class="footer_link-about" onclick="scrollToY(800)">About</div>
                 <div class="footer_link-process" onclick="scrollToY(1400)">Process</div>
                 <div class="footer_link-portfolio" onclick="scrollToY(2300)">Portfolio</div>
-                <div class="footer_link-blog" onclick="scrollToY(4200)">Blog</div>
-                <div class="footer_link-services" onclick="scrollToY(5000)">Services</div>
+                <div class="footer_link-blog" onclick="scrollToY(3700)">Blog</div>
+                <div class="footer_link-services" onclick="scrollToY(4500)">Services</div>
             </div>
             <p class="foooter_copyright">Copyright © 2024 Brooklyn</p>
         </div>
@@ -305,6 +307,9 @@ Gia Miminoshvili</h1>
     <!--ionicons-->
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--GSAP (GreenSock Animation Platform)-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </body>
 </html>
 <script>

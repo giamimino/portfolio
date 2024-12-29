@@ -40,6 +40,9 @@ fetch('./assets/json/projects.json')
       btn.type = "button";
       btn.innerHTML = `<ion-icon name="arrow-forward-outline" class="project-icon_left"></ion-icon><span>Case Study</span><ion-icon name="arrow-forward-outline" class="project-icon_right"></ion-icon>`;
       portfolio_projectImgOuterWrapper.appendChild(btn);
+      btn.addEventListener("click", ()=> {
+        window.open(project.adress, "_blank");
+      })
     });
   })
   .catch(error => {

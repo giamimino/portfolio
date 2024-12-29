@@ -3,24 +3,21 @@
     "category": "Full-stack development",
     "title": "UrbanGooDs e-comerce",
     "info": "UrbanGooDs is an e-commerce platform offering a curated selection of premium tech accessories. Featuring a modern, responsive design, it ensures a seamless shopping experience for tech enthusiasts. Explore the site for more.",
-    "image": "./assets/images/projects/urbangoods.png"
+    "image": "./assets/images/projects/urbangoods.png",
+    "adress": "http://urbangoods.onlinewebshop.net/"
   },
   {
     "category": "Front-End development",
     "title": "Weather app",
     "info": "Weather is a sleek and intuitive weather app designed to provide accurate, real-time weather updates. With a clean, responsive interface, it ensures users can quickly access forecasts for any location. Check it out for a seamless weather-tracking experience!",
-    "image": "./assets/images/projects/weather.png"
-  },
-  {
-    "category": "Full-stack development",
-    "title": "UrbanGooDs e-comerce",
-    "info": "UrbanGooDs is an e-commerce platform offering a curated selection of premium tech accessories. Featuring a modern, responsive design, it ensures a seamless shopping experience for tech enthusiasts. Explore the site for more.",
-    "image": "./assets/images/projects/urbangoods.png"
+    "image": "./assets/images/projects/weather.png",
+    "adress": "https://giamimino.github.io/weatherAPP/"
   },
   {
     "category": "Front-End development",
-    "title": "Weather app",
-    "info": "Weather is a sleek and intuitive weather app designed to provide accurate, real-time weather updates. With a clean, responsive interface, it ensures users can quickly access forecasts for any location. Check it out for a seamless weather-tracking experience!",
-    "image": "./assets/images/projects/weather.png"
+    "title": "ToDo pAp v1",
+    "info": "todo is a sleek and intuitive task management app designed to help users stay organized and productive. With a clean, responsive interface and a modern dark theme, it allows users to effortlessly add, complete, and delete tasks. Real-time progress tracking ensures you stay on top of your goals. Experience streamlined productivity with todo!",
+    "image": "./assets/images/projects/todoV1.png",
+    "adress": "https://giamimino.github.io/ToDoV1/"
   }
 ]

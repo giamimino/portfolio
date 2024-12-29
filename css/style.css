@@ -957,7 +957,7 @@ div[class^="EPCHC_box"] p {
 /* hire me contact container slide start form here */
 
 .hire_me_contact-container {
-    padding: 100px 200px;
+    padding: 100px 450px;
     background-color: #B1B0AD;
     display: flex;
     justify-content: center;
@@ -991,12 +991,19 @@ div[class^="EPCHC_box"] p {
     flex-direction: column;
     gap: 24px;
     position: relative;
+    width: 100%;
 }
+
+.hire_me_contact-wrapper form div {
+    display: flex;
+}
+
 .hire_me_contact-wrapper form input {
     border-bottom: 2px solid #E6E8EB;
     padding-bottom: 10px;
     transition: all .5s ease-in-out;
     position: relative;
+    width: 100%;
 }
 
 .hire_me_contact-wrapper form input:focus {

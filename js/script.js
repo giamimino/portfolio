@@ -4,3 +4,7 @@ const scrollToY = (Y) => {
     behavior: 'smooth'
   })
 }
+
+const goGithub = ()=> {
+  window.open("https://github.com/giamimino", "_blank");
+}
